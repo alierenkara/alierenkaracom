@@ -1,13 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './components/App';
+import "./assets/style.css";
 
-export class FirstComponent extends React.Component {
-    constructor(props){
-        super(props);
-    }
-    render(){
-        return <div> ali erenkara </div>
-    }
-}
 
-ReactDOM.render(<FirstComponent/>, document.getElementById("container"));
+ReactDOM.render(<App/>, document.getElementById("app"));
