@@ -8,20 +8,25 @@ export class App extends React.Component {
     super(props);
   }
   render() {
+    
     return (
-      <MediaQuery minWidth={699}>
+      <MediaQuery minWidth={700} minDeviceWidth={700}>
         {matches => {
-          return matches ? (
-            <div className="app">
-              <Sidebar />
-              <Article />
-            </div>
-          ) : (
-            <div className="mobile-app">
-              <Sidebar />
-              <Article />
-            </div>
-          );
+          if (matches) {
+            return (
+              <div >
+                <Sidebar />
+                <Article/>
+              </div>
+            );
+          } else {
+            return (
+              <div className={'mobile-app'}>
+                <Sidebar />
+                <Article />
+              </div>
+            );
+          }
         }}
       </MediaQuery>
     );

@@ -6,11 +6,12 @@ export class Sidebar extends React.Component {
   }
   render() {
     return (
-      <div className="sidebar">
+      <div className="sidebar" >
         sidebar
         <div className="frame">
-            frame
+            ALİ ERENKARA
         </div>
+        
       </div>
     );
   }
